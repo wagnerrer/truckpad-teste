@@ -35,7 +35,7 @@ http://127.0.0.1:8000/api/crate-ebook/ <br>
 http://127.0.0.1:8000/api/update-ebook/1 1 é o codigo do ebook criado <br>
 http://127.0.0.1:8000/api/delete-ebook/1 1 é o codigo do ebook criado <br>
 as apis abaixo são de listagem e não necessitam do token<br>
-http://127.0.0.1:8000/api/list-author/
+http://127.0.0.1:8000/api/list-author/<br>
 http://127.0.0.1:8000/api/list-ebook/
 
 
