@@ -169,7 +169,7 @@
 			"response": []
 		},
 		{
-			"name": "update-ebook Copy",
+			"name": "delete-ebook",
 			"request": {
 				"auth": {
 					"type": "bearer",
