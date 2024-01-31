@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "9e3c638a-b944-449c-ad89-7b5950b8a525",
+		"name": "truckpad",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4179190"
+	},
+	"item": [
+		{
+			"name": "login-token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"admin\",\n\t\"password\": \"wre451236\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-author",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA2NjYxMjkyLCJpYXQiOjE3MDY2NjA5OTIsImp0aSI6IjkwMDViYmI4MzFiZTRmM2FiNmFjMDk1NmEwZTJmZmEzIiwidXNlcl9pZCI6MX0.6o8tn-VE9WiLl2C7-59tLJiQmB_nbHsHePTFn2uoFrQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Mane do Bugalho\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/crate-author/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"crate-author",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-ebook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA2NjYxNjAxLCJpYXQiOjE3MDY2NjEzMDEsImp0aSI6IjEyMDRkZDQ5ODE2NDRiY2Y5YmYzYzY5NTE0N2EyYzcyIiwidXNlcl9pZCI6MX0.VjRgTty6EvQiww3eAoK7MJX--doTxVc4KTzP3Y7Va5c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Caminho Cancão\",\n    \"description\": \"Livro sobre Canção\",\n    \"id_author\": 1\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/create-ebook/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create-ebook",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-ebook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA2NjYxMjkyLCJpYXQiOjE3MDY2NjA5OTIsImp0aSI6IjkwMDViYmI4MzFiZTRmM2FiNmFjMDk1NmEwZTJmZmEzIiwidXNlcl9pZCI6MX0.6o8tn-VE9WiLl2C7-59tLJiQmB_nbHsHePTFn2uoFrQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Caminho Verdas\",\n    \"description\": \"Livro sobre veredas\",\n    \"id_author\": 2\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/update-ebook/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update-ebook",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-ebook Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA2NjYxMjkyLCJpYXQiOjE3MDY2NjA5OTIsImp0aSI6IjkwMDViYmI4MzFiZTRmM2FiNmFjMDk1NmEwZTJmZmEzIiwidXNlcl9pZCI6MX0.6o8tn-VE9WiLl2C7-59tLJiQmB_nbHsHePTFn2uoFrQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/delete-ebook/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete-ebook",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-author",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/list-author/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"list-author",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-ebook",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/list-ebook/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"list-ebook",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
